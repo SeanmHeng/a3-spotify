@@ -1,4 +1,5 @@
 --Readme document for Sean Heng, smheng@uci.edu--
+A3 Group Number: 78
 
 1. How many assignment points do you believe you completed (replace the *'s with your numbers)?
 
@@ -17,7 +18,19 @@
 
 3. What online resources did you consult when completing this assignment? (list specific URLs)
     - angular.dev: the main Angular documentation.
+        - https://angular.dev/guide/templates/binding
+        - https://angular.dev/guide/templates/event-listeners
+        - https://angular.dev/guide/templates/two-way-binding
+        - https://angular.dev/guide/templates/control-flow
+        - https://angular.dev/api/core/@for
+        - https://angular.dev/guide/components/inputs
+        - https://angular.dev/guide/di
+        - https://angular.dev/api/router/RouterLink
+        - https://angular.dev/api/router/ActivatedRoute
+        - https://angular.dev/guide/http
     - getbootstrap.com: Bootstrap, for the carousel and progress bar.
+        - https://getbootstrap.com/docs/5.3/components/carousel/
+        - https://getbootstrap.com/docs/5.3/components/progress/
 
 
 4. What classmates or other individuals did you consult as part of this assignment? What did you discuss?
