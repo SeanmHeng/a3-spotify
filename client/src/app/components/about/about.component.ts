@@ -13,11 +13,13 @@ export class AboutComponent implements OnInit {
   profile_link:string = null;
 
 
+  //Inject the Spotify service
   constructor(private spotifyService: SpotifyService) { }
 
   ngOnInit() {
   }
 
+  //Get the user's info from Spotify when the button is clicked
   loadInfo() {
     this.spotifyService.aboutMe().then((data) => {
       this.name = data.name;

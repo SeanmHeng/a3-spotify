@@ -19,6 +19,7 @@ export class TrackPageComponent implements OnInit {
 
   ngOnInit() {
   	this.trackId = this.route.snapshot.paramMap.get('id');
+  	//Load the track from Spotify
   	this.spotifyService.getTrack(this.trackId).then((data) => {
   		this.track = data;
   	});

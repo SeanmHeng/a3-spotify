@@ -23,6 +23,7 @@ export class SearchComponent implements OnInit {
   ngOnInit() {
   }
 
+  //Ask Spotify for the typed text in the chosen category
   search() {
     this.spotifyService.searchFor(this.searchCategory, this.searchString).then((data) => {
       this.resources = data;

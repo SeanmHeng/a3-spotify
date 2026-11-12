@@ -1,6 +1,7 @@
 <div class="row">
 	@if(track) {
 		<div class="col-sm-6 col-12">
+			<!--Name, album link and artist links-->
 			<h1>{{track.name}}</h1>
 			<p>
 				Track on <a routerLink="/album/{{track.album.id}}">{{track.album.name}}</a>
@@ -12,6 +13,7 @@
 					</p>
 				}
 			</div>
+			<!--Duration and Spotify link-->
 			<p>
 				Duration: {{track.durationStr}}
 			</p>
@@ -20,6 +22,7 @@
 			</p>
 		</div>
 		<div class="col-sm-6 col-12">
+			<!--Popularity bar-->
 			<app-thermometer [popularity]="track.popularity"></app-thermometer>
 		</div>
 	}

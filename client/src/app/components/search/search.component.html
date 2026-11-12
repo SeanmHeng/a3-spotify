@@ -1,4 +1,5 @@
 <h1>Search Spotify</h1>
+<!--Input and dropdown are bound to searchString and searchCategory; Enter also searches-->
 <input [(ngModel)]="searchString" (keyup.enter)="search()">
 <select [(ngModel)]="searchCategory" (change)="resources = null">
 	@for (category of searchCategories; track category) {
@@ -6,6 +7,7 @@
 	}
 </select>
 <button class="btn btn-light" (click)="search()">Search</button>
+<!--Carousel for artists/albums, table for tracks-->
 @if (searchCategory == 'artist' || searchCategory == 'album') {
 	<app-carousel carouselId="search-carousel" [resources]="resources"></app-carousel>
 }

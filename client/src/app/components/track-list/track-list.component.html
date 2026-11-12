@@ -5,11 +5,13 @@
 				<th scope="col">#</th>
 				<th scope="col">Track</th>
 				<th scope="col">Duration</th>
+				<!--Artist and album columns can be hidden-->
 				@if (!hideArtist) { <th scope="col">Primary Artist</th> }
 				@if (!hideAlbum) { <th scope="col">Album</th> }
 			</tr>
 		</thead>
 		<tbody>
+			<!--One row per track, numbered from 1-->
 			@for (track of tracks; track track.id; let i = $index) {
 				<tr>
 					<td>{{i + 1}}</td>

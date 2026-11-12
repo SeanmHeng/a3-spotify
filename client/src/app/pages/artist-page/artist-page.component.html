@@ -1,6 +1,7 @@
 @if(artist) {
 	<div class="row">
 		<div class="col-xl-4 col-12">
+			<!--Name, image and Spotify link-->
 			<h1>{{artist.name}}</h1>
 			<img id="artistImg" [src]="artist.imageURL">
 			<p>
@@ -9,13 +10,16 @@
 		</div>
 		<div class="col-xl-4 col-12">
 			<h3>Popularity</h3>
+			<!--Followers (comma formatted) and popularity bar-->
 			<p>{{artist.followersStr}} followers</p>
 			<app-thermometer [popularity]="artist.popularity"></app-thermometer>
 			<h3>{{artist.name}}'s Albums</h3>
+			<!--Albums carousel (id differs from the search carousel)-->
 			<app-carousel carouselId="artist-albums" [resources]="albums"></app-carousel>
 		</div>
 		<div class="col-xl-4 col-12">
 			<h3>{{artist.name}}'s Top Tracks</h3>
+			<!--Top tracks-->
 			<app-track-list [tracks]="topTracks"></app-track-list>
 		</div>
 	</div>

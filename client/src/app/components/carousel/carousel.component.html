@@ -1,6 +1,7 @@
 @if(resources) {
 <div [id]="carouselId" class="carousel slide carousel-fade">
   <div class="carousel-inner">
+    <!--One card per resource; only the first is active (Bootstrap needs exactly one)-->
     @for (resource of resources; track resource.id; let first = $first) {
       <app-carousel-card class="carousel-item" [class.active]="first" [resource]="resource"></app-carousel-card>
     }

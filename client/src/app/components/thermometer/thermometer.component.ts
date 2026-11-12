@@ -8,6 +8,7 @@ import { Popularity } from 'src/app/data/popularity';
     standalone: false
 })
 export class ThermometerComponent implements OnInit {
+  //Popularity to display; set by the parent page
   @Input() popularity: Popularity;
 
   constructor() { }
